@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang = "en">
 <head>
-<link rel="stylesheet" href="style.css">
-<title>Reservations</title>
+  <title>Reservations</title>;
+  <meta charset = "utf-8">;
+  <link rel="stylesheet" href="style.css">;
 </head>
+  
 <body>
 
+  
 </body>
+  
 </html>
