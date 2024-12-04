@@ -1,6 +1,6 @@
-## ISTA 329: Restaurant-Finder
+# ISTA 329: Restaurant-Finder
 
-# Purpose: To design, develop, and publish a web site using recommended design practices within an assigned group. The web site will contain a home page and at least six (but no more than ten) content pages. You are required to create an external style sheet (.css file) that configures text, color, and page layout. (No font tags, embedded CSS, or inline CSS may be used.)
+## Purpose: To design, develop, and publish a web site using recommended design practices within an assigned group. The web site will contain a home page and at least six (but no more than ten) content pages. You are required to create an external style sheet (.css file) that configures text, color, and page layout. (No font tags, embedded CSS, or inline CSS may be used.)
 
 Required components of the pages include:
 
