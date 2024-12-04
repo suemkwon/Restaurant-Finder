@@ -1,30 +1,27 @@
-/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8;
     padding: 0 20px;
 }
 
-/* Header */
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(45deg, #0C234B, #AB0520); 
+    background: linear-gradient(45deg, #0C234B, #AB0520);
     padding: 40px 0;
     color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .logo-title {
@@ -34,19 +31,17 @@ header {
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .site-title {
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 42px;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
-/* Navigation Bar */
 .nav-bar {
     margin-top: 20px;
     display: flex;
@@ -58,106 +53,106 @@ header {
 .nav-link {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 8px 20px;
     border: 2px solid white;
-    border-radius: 20px;
     transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
 }
 
 .nav-link:hover {
     background-color: white;
-    color: #AB0520; 
+    color: #AB0520;
 }
 
-/* About Us Section */
 .about-us {
     text-align: center;
-    padding: 40px 20px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    margin: 40px 0;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-    border: 3px solid #0C234B; 
+    padding: 20px 15px;
+    background-color: #E0E7EF;
+    margin: 20px 0;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0C234B;
 }
 
 .about-us h2 {
     font-size: 28px;
-    margin-bottom: 15px;
-    color: #AB0520; 
-    font-weight: bold;
+    margin-bottom: 10px;
+    color: #AB0520;
+    font-weight: 700;
 }
 
 .about-us p {
-    font-size: 18px;
-    color: #666;
-    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+    line-height: 1.6;
 }
 
-/* Featured Image Section */
 .featured-image {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .featured-img {
-    width: 95%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1000px;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    border: 3px solid #AB0520; 
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Photo Gallery */
-.gallery {
+.restaurant-features {
     text-align: center;
-    margin: 40px 0;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-    border: 3px solid #0C234B; 
+    margin: 20px 0;
+    padding: 20px 15px;
+    background-color: #E0E7EF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0C234B;
 }
 
-.gallery h2 {
+.restaurant-features h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #AB0520;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.gallery-container img {
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
     width: 100%;
-    border-radius: 15px;
+    max-width: 150px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    border: 3px solid #AB0520; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #0C234B;
 }
 
-.gallery-container img:hover {
+.gallery-item img:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
+.gallery-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
 footer {
     text-align: center;
-    background: linear-gradient(45deg, #AB0520, #0C234B); 
+    background: linear-gradient(45deg, #AB0520, #0C234B);
     color: white;
     padding: 20px 0;
-    border-radius: 10px;
-    margin-top: 40px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
