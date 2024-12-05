@@ -1,0 +1,47 @@
+form {
+   font: 13px 'Inter', sans-serif;
+   background-color: white;
+   padding: 20px;
+}
+
+
+label {
+   width: 30px;
+   display: inline-block;
+   text-align: center;
+   margin-right: 8px;
+   padding: 10px;
+   font-size: 15px;
+}
+
+input[type=text], input[type=email], select, input[type=tel]{
+   box-sizing: border-box;
+   width: 250px;
+   padding: 10px;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+}
+
+input[type=submit] {
+   width: 200px;
+   background-color: FireBrick;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: DarkBlue;
+}
+
+#reservationTitle {
+	margin-bottom: 34px;
+	font-family: 'Inter', sans-serif;
+}
+
+#univblvd {
+	
+}
