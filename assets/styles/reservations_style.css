@@ -8,29 +8,39 @@ form {
 label {
    width: 30px;
    display: inline-block;
-   text-align: center;
+   text-align: left;
    margin-right: 8px;
-   padding: 10px;
+   padding: 12px 12px 12px 0;
    font-size: 15px;
+   
+   position: relative;
+   left: 155px;
 }
 
-input[type=text], input[type=email], select, input[type=tel]{
+input[type=text], input[type=email], select, input[type=tel], input[type= date], input[type= number], input[type= time]{
    box-sizing: border-box;
    width: 250px;
-   padding: 10px;
-   border: 1px solid #aaa;
+   padding: 12px;
+   border: 1px solid #851313;
    border-radius: 4px;
+   
+   position: relative;
+   left: 100px;
 }
 
 input[type=submit] {
    width: 200px;
    background-color: FireBrick;
    color: white;
-   padding: 15px;
+   padding: 20px;
    margin: 10px 0;
    border: none;
    border-radius: 4px;
    cursor: pointer;
+   
+   position: relative;
+   left: 165px;
+   top: 15px;
 }
 
 input[type=submit]:hover {
@@ -40,8 +50,16 @@ input[type=submit]:hover {
 #reservationTitle {
 	margin-bottom: 34px;
 	font-family: 'Inter', sans-serif;
+	
+	position: relative;
+	top: 30px;
+	left: 600px;
 }
 
 #univblvd {
-	align-items: right;
+	position: absolute;
+	top: 500px;
+	right: 120px;
+	width = 800px;
+	height = 400px;
 }
