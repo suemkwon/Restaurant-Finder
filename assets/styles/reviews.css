@@ -1,0 +1,100 @@
+/*
+    File: reviews.css
+    Project: University Blvd Foodie Finds
+    Course: ISTA 329
+    Term: Fall 2024
+
+    Author: Behruz Bahriddinov
+    Date: 12/6/2024
+    Description:
+        This file contains the styles for the Reviews Page, including the layout and 
+        appearance of restaurant items, reviews sections, and the review submission form.
+*/
+
+.restaurant-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.restaurant-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  flex: 1;
+}
+
+.restaurant-item:hover {
+  background-color: #f9f9f9;
+}
+
+.restaurant-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#review-form-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-reviews form input,
+.restaurant-reviews form select,
+.restaurant-reviews form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 200px;
+  background-color: FireBrick;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: DarkBlue;
+}
+
+.reviews-placeholder {
+  margin-top: 10px;
+}
+
+.restaurant-reviews {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reviews-container .review {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}

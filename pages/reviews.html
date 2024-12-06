@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+    File: reviews.html
+    Project: University Blvd Foodie Finds
+    Course: ISTA 329
+    Term: Fall 2024
+
+    Author: Behruz Bahriddinov
+    Date: 12/6/2024
+    Description:
+        This file contains the Reviews Page for the University Blvd Foodie Finds website. 
+        Users can explore customer reviews for restaurants, view ratings, and submit their own feedback.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/reviews.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="../assets/images/logo-image.png"
+          alt="Foodie Finds Logo"
+          class="logo"
+        />
+        <h1 class="site-title">University Blvd Foodie Finds</h1>
+      </div>
+      <nav class="nav-bar">
+        <a href="home-page.html" class="nav-link">Home</a>
+        <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
+        <a href="restaurant-map.html" class="nav-link">Restaurant Map</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reviews.html" class="nav-link active">Reviews</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link">Contact Restaurants</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Restaurant List -->
+      <section class="restaurant-list">
+        <h2>User Guide</h2>
+        <p>
+          Welcome to the Reviews Page! To explore customer feedback, click on
+          any restaurant from the list to see its reviews and overall rating. If
+          you'd like to share your experience, scroll down to the review form
+          below the restaurant, enter your name (optional), select a rating, and
+          write your review. Once submitted, your feedback will be displayed
+          instantly!
+        </p>
+        <h2>Reviews Overview</h2>
+
+        <!-- No Anchovies -->
+        <div
+          class="restaurant-item"
+          onclick="toggleReviews('no-anchovies', this)"
+        >
+          <img
+            src="../assets/images/no-anchovies.jpg"
+            alt="No Anchovies"
+            class="restaurant-image"
+            aria-label="Image of No Anchovies restaurant"
+          />
+          <div class="restaurant-info">
+            <h3>No Anchovies</h3>
+            <p>Rating: <span id="rating-no-anchovies">4.2</span> ★</p>
+            <p><span id="reviews-count-no-anchovies">2</span> Reviews</p>
+            <p>Cost: $$ (Moderate)</p>
+          </div>
+        </div>
+        <div class="reviews-placeholder"></div>
+
+        <!-- Illegal Pete's -->
+        <div
+          class="restaurant-item"
+          onclick="toggleReviews('illegal-petes', this)"
+        >
+          <img
+            src="../assets/images/illegal-petes.jpg"
+            alt="Illegal Pete's"
+            class="restaurant-image"
+            aria-label="Image of illegal-petes restaurant"
+          />
+          <div class="restaurant-info">
+            <h3>Illegal Pete's</h3>
+            <p>Rating: <span id="rating-illegal-petes">4.2</span> ★</p>
+            <p><span id="reviews-count-illegal-petes">2</span> Reviews</p>
+            <p>Cost: $ (Cheap)</p>
+          </div>
+        </div>
+        <div class="reviews-placeholder"></div>
+
+        <!-- frog and firkin -->
+        <div
+          class="restaurant-item"
+          onclick="toggleReviews('frog-firkin', this)"
+        >
+          <img
+            src="../assets/images/frog-firkin.jpg"
+            alt="frog-firkin"
+            class="restaurant-image"
+            aria-label="Image of Frog and Firkin Restaurant"
+          />
+          <div class="restaurant-info">
+            <h3>Frog and Firkin</h3>
+            <p>Rating: <span id="rating-frog-firkin">4.0</span> ★</p>
+            <p><span id="reviews-count-frog-firkin">2</span> Reviews</p>
+            <p>Cost: $ (Cheap)</p>
+          </div>
+        </div>
+        <div class="reviews-placeholder"></div>
+
+        <!-- Agave House -->
+        <div
+          class="restaurant-item"
+          onclick="toggleReviews('agave-house', this)"
+        >
+          <img
+            src="../assets/images/agave-house.jpg"
+            alt="Agave House"
+            class="restaurant-image"
+            aria-label="Image of Agave House restaurant"
+          />
+          <div class="restaurant-info">
+            <h3>Agave House</h3>
+            <p>Rating: <span id="rating-agave-house">3.5</span> ★</p>
+            <p><span id="reviews-count-agave-house">2</span> Reviews</p>
+            <p>Cost: $ (Cheap)</p>
+          </div>
+        </div>
+        <div class="reviews-placeholder"></div>
+
+        <!-- bacio-italiano -->
+        <div
+          class="restaurant-item"
+          onclick="toggleReviews('bacio-italiano', this)"
+        >
+          <img
+            src="../assets/images/bacio.jpg"
+            alt="bacio-italiano"
+            class="restaurant-image"
+            aria-label="Image of Bacio Italiano restaurant"
+          />
+          <div class="restaurant-info">
+            <h3>Bacio Italiano</h3>
+            <p>Rating: <span id="rating-bacio-italiano">3.5</span> ★</p>
+            <p><span id="reviews-count-bacio-italiano">2</span> Reviews</p>
+            <p>Cost: $ (Cheap)</p>
+          </div>
+        </div>
+        <div class="reviews-placeholder"></div>
+
+        <!-- gentle-bens -->
+        <div
+          class="restaurant-item"
+          onclick="toggleReviews('gentle-bens', this)"
+        >
+          <img
+            src="../assets/images/gentle-bens.png"
+            alt="gentle-bens"
+            class="restaurant-image"
+            aria-label="Image of Gentle Bens restaurant"
+          />
+          <div class="restaurant-info">
+            <h3>Gentle Bens</h3>
+            <p>Rating: <span id="rating-gentle-bens">5.0</span> ★</p>
+            <p><span id="reviews-count-gentle-bens">2</span> Reviews</p>
+            <p>Cost: $ (Cheap)</p>
+          </div>
+        </div>
+        <div class="reviews-placeholder"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 University Blvd Foodie Finds.</p>
+    </footer>
+    <script src="../scripts/reviews.js"></script>
+  </body>
+</html>
