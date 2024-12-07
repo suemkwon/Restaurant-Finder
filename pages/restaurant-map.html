@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Map</title>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/map_style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="../assets/images/logo-image.png"
+          alt="Foodie Finds Logo"
+          class="logo"
+        />
+        <h1 class="site-title">University Blvd Foodie Finds</h1>
+      </div>
+      <nav class="nav-bar">
+        <a href="home-page.html" class="nav-link">Home</a>
+        <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
+        <a href="restaurant-map.html" class="nav-link active">Restaurant Map</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link">Contact Restaurants</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <iframe
+          src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=E%20University%20Blvd%20Tucson%20AZ+(University%20Blvd%20Restaurants)&t=&z=18&ie=UTF8&iwloc=B&output=embed"
+        ></iframe>
+      </div>
+
+      <!-- from home page -->
+      <section class="restaurant-features">
+        <h2>Featured Restaurants</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="../assets/images/no-anchovies.jpg" alt="No Anchovies" />
+            <p>No Anchovies</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../assets/images/illegal-petes.jpg"
+              alt="Illegal Pete's"
+            />
+            <p>Illegal Pete's</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/images/frog-firkin.jpg" alt="Frog & Firkin" />
+            <p>Frog & Firkin</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/images/agave-house.jpg" alt="Agave House" />
+            <p>Agave House</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/images/bacio.jpg" alt="Bacio" />
+            <p>Bacio Italiano</p>
+          </div>
+          <div class="gallery-item">
+            <img src="../assets/images/gentle-bens.png" alt="Gentle Ben's" />
+            <p>Gentle Ben's</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 University Blvd Foodie Finds.</p>
+    </footer>
+  </body>
+</html>

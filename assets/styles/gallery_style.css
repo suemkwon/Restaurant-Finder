@@ -1,0 +1,66 @@
+/* Add a container for the main content */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 20px;
+  gap: 20px; /* Add space between the menu and photos */
+}
+
+/* Menu styling */
+.menu {
+  flex: 1;
+  max-width: 45%;
+}
+
+.menu-display {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
+}
+
+/* Photos styling */
+.photos {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove absolute positioning */
+.menu,
+.photos {
+  position: static;
+}
+
+.nav-buttons button {
+  padding: 8px 20px;
+  margin: 0 5px;
+  background: linear-gradient(45deg, #0c234b, #ab0520);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: linear-gradient(45deg, #ab0520, #0c234b);
+}

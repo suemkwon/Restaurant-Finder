@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../assets/styles/gallery_style.css" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img
+          src="../assets/images/logo-image.png"
+          alt="Foodie Finds Logo"
+          class="logo"
+        />
+        <h1 class="site-title">University Blvd Foodie Finds</h1>
+      </div>
+      <nav class="nav-bar">
+        <a href="home-page.html" class="nav-link">Home</a>
+        <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
+        <a href="restaurant-map.html" class="nav-link">Restaurant Map</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link">Contact Restaurants</a>
+      </nav>
+    </header>
+
+    <div class="nav-buttons">
+      <h2 id="restaurantName">Restaurant 1</h2>
+      <button onclick="prevRestaurant()">Previous</button>
+      <button onclick="nextRestaurant()">Next</button>
+    </div>
+    <main>
+      <div class="menu">
+        <iframe
+          id="menuFrame"
+          class="menu-display"
+          src=""
+          title="Restaurant Menu"
+        ></iframe>
+      </div>
+      <div class="photos">
+        <img id="photo1" src="rest1-1.jpg" />
+        <img id="photo2" src="rest1-2.jpg" />
+        <img id="photo3" src="rest1-3.jpg" />
+        <img id="photo4" src="rest1-4.jpg" />
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 University Blvd Foodie Finds.</p>
+    </footer>
+
+    <script src="../scripts/gallery.js"></script>
+  </body>
+</html>
