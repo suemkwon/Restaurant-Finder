@@ -1,6 +1,6 @@
 const restaurants = [
   {
-    name: "No anchovies",
+    name: "No Anchovies",
     menuPdf: "../assets/iframes/NO+CHOVES+MENU+PDF.pdf",
     photos: [
       "../assets/images/anchov-pic1.jpeg",

@@ -1,20 +1,30 @@
 # ISTA 329: Restaurant-Finder
 
-## Purpose: To design, develop, and publish a web site using recommended design practices within an assigned group. The web site will contain a home page and at least six (but no more than ten) content pages. You are required to create an external style sheet (.css file) that configures text, color, and page layout. (No font tags, embedded CSS, or inline CSS may be used.)
+## How to View
 
-Required components of the pages include:
+1. Unzip "Restaurant-Finder" folder
+2. Open "pages" folder
+3. Open "home-page.html" file
 
-- Appropriate meta tags
-- One page utilizing tables effectively to display tabular information (making sure the data being shared is clearly explained)
-- One e-mail hyperlink
-- Consistent banner logo area
-- Consistent main navigation
-- Association with external style sheet (.css file)
-- Multimedia Element: YouTube video, CSS image gallery, or CSS Transition
-- One page containing a form with at least three elements
-- Use of JavaScript on TWO pages
+## Required Components:
 
-Popular browsers (including Chrome, Edge, and Firefox) must render each page. Your web site project will be evaluated on the following criteria:
+### Appropriate meta tags
+### One page utilizing tables effectively to display tabular information (making sure the data being shared is clearly explained)
+- Can be found under the "pages" folder. Used in "home-page.html" in the "Restaurant Comparison" section".
+### One e-mail hyperlink
+- Can be found under the "pages" folder. Used in "home-page.html" in the "About Us" section.
+### Consistent banner logo area
+### Consistent main navigation
+### Association with external style sheet (.css file)
+- Can be found under the "styles" folder.
+### Multimedia Element: YouTube video, CSS image gallery, or CSS Transition
+- Can be found under the "pages" folder. Used in "gallery.html".
+### One page containing a form with at least three elements
+- Can be found under the "pages" folder. Used in "reservations.html".
+### Use of JavaScript on TWO pages
+- Can be found under the "scripts" folder. Used in "gallery.html" and "reviews.html".
+
+## Popular browsers (including Chrome, Edge, and Firefox) must render each page. Your web site project will be evaluated on the following criteria:
 
 - Project Milestones
 - Including all required web page elements
