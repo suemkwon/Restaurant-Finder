@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the top restaurants on University Blvd.">
-    <title>University Blvd Foodie Finds - Reservations</title>
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <link rel = "stylesheet" href="../assets/styles/contact_style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact restaurants on University Blvd."
+    />
+    <title>University Blvd Foodie Finds - Contact</title>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/contact_style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo-title">
-            <img src="../assets/images/logo-image.png" alt="Foodie Finds Logo" class="logo">
-            <h1 class="site-title">University Blvd Foodie Finds</h1>
-        </div>
-        <nav class="nav-bar">
-            <a href="home-page.html" class="nav-link">Home</a>
-            <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
-            <a href="restaurant-map.html" class="nav-link">Restaurant Map</a>
-            <a href="gallery.html" class="nav-link">Gallery</a>
-            <a href="reviews.html" class="nav-link">Reviews</a>
-            <a href="reservations.html" class="nav-link">Reservations</a>
-            <a href="contact.html" class="nav-link active">Contact Restaurants</a>
-        </nav>
+      <div class="logo-title">
+        <img
+          src="../assets/images/logo-image.png"
+          alt="Foodie Finds Logo"
+          class="logo"
+        />
+        <h1 class="site-title">University Blvd Foodie Finds</h1>
+      </div>
+      <nav class="nav-bar">
+        <a href="home-page.html" class="nav-link">Home</a>
+        <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
+        <a href="restaurant-map.html" class="nav-link">Restaurant Map</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="reservations.html" class="nav-link">Reservations</a>
+        <a href="contact.html" class="nav-link active">Contact Restaurants</a>
+      </nav>
     </header>
-  
-	<h1 id = "contactheader">Contact</h1>
-	
-	<h2 id = "headertwo">If you have any questions or concerns, contact the desired restaurant for further information</h2>
-	
-	<form>
-	<p><input type = "text" id = "contactname" name = "contactname" placeholder = "Name" required></p>
-	
-	<p><select id = "restaurants" name = "restaurants" required placeholder = "Select restaurant">
-			<option value = ""> </option>
-			<option value = "Agave House">Agave House</option>
-			<option value = "Bacio Italiano">Bacio Italiano</option>
-			<option value = "Frog Firkin">Frog & Firkin</option>
-			<option value = "Gentle Bens">Gentle Bens</option>
-			<option value = "Illegal Petes">Illegal Petes</option>
-			<option value = "No Anchovies">No Anchovies</option>
-		</select>
-	</p>
-	
-	<p><input type = "text" placeholer = "Message/Concerns" required name = "message" id = "message"></p>
-	
-	<p><input type = "submit" value = "Submit"></p><br>
-	</form>
-	
-	<footer>
-        <p>&copy; 2024 University Blvd Foodie Finds.</p>
+
+    <main class="contact-container">
+      <h1 id="contactheader">Contact</h1>
+      <h2 id="headertwo">
+        If you have any questions or concerns, contact the desired restaurant
+        for further information
+      </h2>
+
+      <form>
+        <label for="contactname">Name:</label>
+        <input
+          type="text"
+          id="contactname"
+          name="contactname"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="restaurants">Select restaurant:</label>
+        <select id="restaurants" name="restaurants" required>
+          <option value="" disabled selected>Select a restaurant</option>
+          <option value="Agave House">Agave House</option>
+          <option value="Bacio Italiano">Bacio Italiano</option>
+          <option value="Frog Firkin">Frog & Firkin</option>
+          <option value="Gentle Bens">Gentle Bens</option>
+          <option value="Illegal Petes">Illegal Petes</option>
+          <option value="No Anchovies">No Anchovies</option>
+        </select>
+
+        <label for="message">Message/Concerns:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 University Blvd Foodie Finds.</p>
     </footer>
-</body>
-  
+  </body>
 </html>
