@@ -1,73 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the top restaurants on University Blvd.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the top restaurants on University Blvd."
+    />
     <title>University Blvd Foodie Finds - Reservations</title>
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <link rel = "stylesheet" href="../assets/styles/reservations_style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/reservations_style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo-title">
-            <img src="../assets/images/logo-image.png" alt="Foodie Finds Logo" class="logo">
-            <h1 class="site-title">University Blvd Foodie Finds</h1>
-        </div>
-        <nav class="nav-bar">
-            <a href="home-page.html" class="nav-link">Home</a>
-            <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
-            <a href="restaurant-map.html" class="nav-link">Restaurant Map</a>
-            <a href="gallery.html" class="nav-link">Gallery</a>
-            <a href="reviews.html" class="nav-link">Reviews</a>
-            <a href="reservations.html" class="nav-link active">Reservations</a>
-            <a href="contact.html" class="nav-link">Contact Restaurants</a>
-        </nav>
+      <div class="logo-title">
+        <img
+          src="../assets/images/logo-image.png"
+          alt="Foodie Finds Logo"
+          class="logo"
+        />
+        <h1 class="site-title">University Blvd Foodie Finds</h1>
+      </div>
+      <nav class="nav-bar">
+        <a href="home-page.html" class="nav-link">Home</a>
+        <a href="restaurant-list.html" class="nav-link">Restaurant List</a>
+        <a href="restaurant-map.html" class="nav-link">Restaurant Map</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="reservations.html" class="nav-link active">Reservations</a>
+        <a href="contact.html" class="nav-link">Contact Restaurants</a>
+      </nav>
     </header>
-    
+
     <main>
-    <form>
-		<h1 id = "reservationTitle">Reservations</h1><br>
-		<label for = "restaurants">Select restaurant:</label><br>
-		<select id = "restaurants" name = "restaurants" required title = "Select restaurant">
-			<option value = ""> </option>
-			<option value = "Agave House">Agave House</option>
-			<option value = "Bacio Italiano">Bacio Italiano</option>
-			<option value = "Frog Firkin">Frog & Firkin</option>
-			<option value = "Gentle Bens">Gentle Bens</option>
-			<option value = "Illegal Petes">Illegal Petes</option>
-			<option value = "No Anchovies">No Anchovies</option>
-		</select><br>
-	
-		<label for = "date">Reservation Date:</label><br>
-		<input type = "date" id = "date" name = "date" min = "2024-12-04"><br>
-		
-		<label for = "time">Time:</label><br>
-		<input type = "time" id = "time" name = "time" min = "08:00" max = "10:00"><br>
-	
-		<label for = "numberOfPeople">Number of party:</label><br>
-		<input type = "number" id = "numberOfPeople" name = "numberOfPeople" min = "1" max = "10"><br>
-	
-		<label for = "firstname">First Name:</label><br>
-		<input type = "text" id = "firstname" name = "firstname" title = "Enter your first name"><br>
-		<label for = "lastname">Last Name:</label><br>
-		<input type = "text" id = "lastname" name = "lastname" title = "Enter your last name"><br>
-	
-		<label for = "email">Email:</label></br>	
-		<input type = "email" id = "email" name = "email" title = "Enter your email address"><br>
-	
-		<label for "phone">Phone Number:</label></br>
-		<input type = "tel" id = "phone" name = "phone" title = "Enter your phone number" required><br>
-		
-		<input type = "submit" value = "Submit"><br>
-		
-		<img src = "../assets/images/universityblvd-picture.jpg" alt = "University Boulevard" id = "univblvd">
-	</form>
-	</main>
-	
-  	<footer>
-        <p>&copy; 2024 University Blvd Foodie Finds.</p>
+      <form>
+        <h1 id="reservationTitle">Reservations</h1>
+        <label for="restaurants">Select restaurant:</label>
+        <select
+          id="restaurants"
+          name="restaurants"
+          required
+          title="Select restaurant"
+        >
+          <option value="" disabled selected>Select a restaurant</option>
+          <option value="Agave House">Agave House</option>
+          <option value="Bacio Italiano">Bacio Italiano</option>
+          <option value="Frog Firkin">Frog & Firkin</option>
+          <option value="Gentle Bens">Gentle Bens</option>
+          <option value="Illegal Petes">Illegal Petes</option>
+          <option value="No Anchovies">No Anchovies</option>
+        </select>
+
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" min="2024-12-04" required />
+
+        <label for="time">Time:</label>
+        <input
+          type="time"
+          id="time"
+          name="time"
+          min="08:00"
+          max="22:00"
+          required
+        />
+
+        <label for="numberOfPeople">Number of party:</label>
+        <input
+          type="number"
+          id="numberOfPeople"
+          name="numberOfPeople"
+          min="1"
+          max="10"
+          required
+        />
+
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          title="Enter your first name"
+          required
+        />
+
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          title="Enter your last name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          title="Enter your email address"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          title="Enter your phone number"
+          required
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+      <img
+        src="../assets/images/universityblvd-picture.jpg"
+        alt="University Boulevard"
+        id="univblvd"
+      />
+    </main>
+
+    <footer>
+      <p>&copy; 2024 University Blvd Foodie Finds.</p>
     </footer>
-</body>
-  
+  </body>
 </html>
